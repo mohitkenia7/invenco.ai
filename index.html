@@ -28,6 +28,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        p.small {
+          line-height: 0.7;
+        }
+        
+        p.big {
+          line-height: 1.8;
+        }
+        </style>
 
 </head>
 
@@ -171,8 +180,9 @@
                     <!-- Image Hover Block -->
                     <div class="member-img"> 
                     <!-- Image  --> 
-                    <img class="img-responsive" src="img/photo-1.png" alt=""> </div>
+                    <img class="img-responsive" src="img/photo-1.jpeg" alt=""> </div>
                     <!-- Member Details -->
+                    <p class ="big"></p>
                     <h4>Mohit Kenia</h4>
                     <!-- Designation --> 
                     <span class="pos"><!--CEO--></1--CEO--></span>
@@ -187,7 +197,8 @@
                     <!-- Image  --> 
                     <img class="img-responsive" src="img/photo-2.jpeg" alt=""> </div>
                     <!-- Member Details -->
-                    <h4>Abhishek Khambhata</h4>
+                    <p class ="big"></p>
+                    <h4>Abhishek Khambhata</h4> 
                     <!-- Designation --> 
                     <span class="pos"><!--Art Director--></span>
                     <div class="team-socials"> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-dribbble"></i></a> <a href="#"><i class="fa fa-github"></i></a> </div>
@@ -201,6 +212,7 @@
                     <!-- Image  --> 
                     <img class="img-responsive" src="img/photo-3.jpeg" alt=""> </div>
                     <!-- Member Details -->
+                    <p class ="big"></p>
                     <h4>Saurabh Patel</h4>
                     <!-- Designation --> 
                     <span class="pos"><!--Manager--></span>
@@ -215,6 +227,7 @@
                     <!-- Image  --> 
                     <img class="img-responsive" src="img/photo-4.jpeg" alt=""> </div>
                     <!-- Member Details -->
+                    <p class ="big"></p>
                     <h4>Dyushyant</h4>
                     <!-- Designation --> 
                     <span class="pos"><!--Creative--></span>
@@ -248,7 +261,7 @@
               <div class="heading text-center"> 
                 <!-- Heading -->
                 <h1>Contact Us</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                <p>We are happy to answer all of your questions. Just let us know how we can help by filling in the form below. <br>Our team will get back to you in the shortest possible delay.</p>
               </div>
             </div>
             <div class="row mrgn30">
@@ -259,16 +272,24 @@
                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
                   </div>
                   <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Your email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" class="form-control" name="company" id="email" placeholder="Enter Company name" title="Please enter your company name">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control" name="phone" id="email" placeholder="Enter phone number" title="Please enter a valid phone number">
                   </div>
                 </div>
                 <div class="col-sm-4">
                   <div class="form-group">
-                    <label for="comments">Comments</label>
-                    <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+                    <label for="comments">Message</label>
+                    <textarea name="comment" class="form-control" id="comments" cols="3" rows="9" placeholder="Let us know how we can help you…" title="Please enter your message (at least 10 characters)"></textarea>
                   </div>
-                  <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
+                  <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit" formaction=" " value="save" onClick=saving()>Submit</button>
                   <div class="result"></div>
                 </div>
               </form>
@@ -322,7 +343,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>InvenCo.ai 2023</p>
+            <p class="small">powered by InvenCo.ai 2023</p>
             <!--<p>Copyright &copy; InvenCo.ai 2023</p> -->
         </div>
     </footer>
