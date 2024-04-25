@@ -1,0 +1,50 @@
+.container_content-section{
+    margin-top: 200px;
+   }
+   
+   .inner_container{
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     
+   
+   }
+.About_Inven{
+    width: 60%;
+    margin-left: 90px;
+    text-align: center;
+    justify-content: center;
+    font-family: myFont;
+    /* font-style: thin;  */
+  
+  }
+  
+  .About_Inven_Para{
+    width: 60%;
+    height: 80%;
+    margin-left: 100px;
+    font-family: myFont;
+    font-style: Montserrat-ExtraLightItalic;
+    font-size: 20px;
+    text-align:justify;
+   
+    
+  }
+  .img_modified{
+    margin-right: 430px;
+  }
+  .for_img{
+    width: 49%;
+    height:79%;
+    margin-right: 100px;
+    border: 2px solid white;
+    transition: border-color 0.3s ease,transform 0.3s ease-in-out;;
+  }
+  
+  .for_img:hover{
+    border-color: orangered;
+    border-width: 4px;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
